@@ -2,7 +2,7 @@ library(Seurat)
 library(harmony)
 library(scCustomize)
 library(ggplot2)
-Yost_Tcell_combined_seurat <- readRDS("/Volumes/Shaw_Timothy/TcellSubtypes/external_data/melanoma/Yostetal/Yost_Tcell_combined_seurat_20260707.rds")
+Yost_Tcell_combined_seurat <- readRDS("Yost_Tcell_combined_seurat_20260707.rds")
 
 #Yost_combined_seurat <- SplitObject(Yost_combined_seurat, split.by = "orig.ident")
 
