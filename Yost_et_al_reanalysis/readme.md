@@ -339,7 +339,6 @@ The pipeline was developed using publicly available melanoma single-cell RNA-seq
 
 Yost KE *et al.* Nature Medicine (2019).
 
-Users should provide a Seurat object containing JunctionScope-derived splice junction counts before running the analysis.
 
 ---
 
@@ -347,13 +346,6 @@ Users should provide a Seurat object containing JunctionScope-derived splice jun
 
 All scripts required to reproduce the analyses described in the associated manuscript are provided in this repository. The software depends exclusively on publicly available R packages and is distributed under an open-source license.
 
----
-
-# Citation
-
-If you use this software in your work, please cite:
-
-> *[Insert manuscript citation]*
 
 ---
 
