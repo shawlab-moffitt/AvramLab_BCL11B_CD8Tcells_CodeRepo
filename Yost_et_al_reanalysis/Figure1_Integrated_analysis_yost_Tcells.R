@@ -2,36 +2,13 @@ library(Seurat)
 library(harmony)
 library(scCustomize)
 library(ggplot2)
-Yost_Tcell_combined_seurat <- readRDS("Yost_Tcell_combined_seurat_20260707.rds")
+CD8_Pre_Yost_Tcell_combined_seurat <- readRDS("CD8_Pre_Yost_Tcell_combined_seurat_20260720.rds")
 
-
-# ---- write out seurat object to file ----
-saveRDS(
-  CD8_Yost_Tcell_combined_seurat,
-  file = "/Volumes/Shaw_Timothy/TcellSubtypes/external_data/melanoma/Yostetal/CD8_Yost_Tcell_combined_seurat_20260720.rds"
-)
-
-saveRDS(
-  CD8_Pre_Yost_Tcell_combined_seurat,
-  file = "/Volumes/Shaw_Timothy/TcellSubtypes/external_data/melanoma/Yostetal/CD8_Pre_Yost_Tcell_combined_seurat_20260720.rds"
-)
-
-saveRDS(
-  CD8_Post_Yost_Tcell_combined_seurat,
-  file = "/Volumes/Shaw_Timothy/TcellSubtypes/external_data/melanoma/Yostetal/CD8_Post_Yost_Tcell_combined_seurat_20260720.rds"
-)
-
-#saveRDS(
-#  Yost_Tcell_combined_seurat,
-#  file = "/Volumes/Shaw_Timothy/TcellSubtypes/external_data/melanoma/Yostetal/Yost_Tcell_combined_seurat_20260720.rds"
-#)
 
 # ---- generate violin plot comparing outcome in PRE treatment ----
 
 genes <- c(
- "BCL11B","TCF7", "BACH1", "SATB1", "CXCR3", "TOX", "LAG3",
-  "NR4A1", "NR4A2", "PDCD1", "CTLA4", "HAVCR2", "TIGIT",
-  "PRF1", "GZMB", "TNF"
+ "BCL11B","BACH2", "SATB1", "PRF1", "GZMB"
 )
 
 # Check genes present
